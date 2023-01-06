@@ -15,7 +15,7 @@
 </head>
 <body class="bg-red-100">
 
-    <header class="bg-red-800">
+    <header class="absalute top-0 bg-red-800">
 			<div>
 				<div class="bg-red-800 text-white navbar bg-base-100">
 					<div class="navbar-start">
@@ -105,27 +105,49 @@
 				</div>
 			</div>
 		</header>
+	
 		<nav class="flex grid grid-cols-6 gap-4 h-96">
 			<div class="bg-red-200">
 				<div class="card flex-shrink-0 w-full max-w-sm">
 					<div class="card-body">
 						<div class="form-control">
 							<label class="label">
-								<span class="label-text text-black font-bold">Email</span>
+								<span 
+									class="label-text text-black font-bold">
+										Email
+								</span>
 							</label>
-							<input type="text" placeholder="email" class="input input-bordered bg-red-800" />
+							<input 
+								type="text" 
+								placeholder="email"
+								class="input input-bordered bg-red-800" />
 						</div>
 						<div class="form-control">
 							<label class="label">
-								<span class="label-text text-black font-bold">Password</span>
+								<span 
+									class="label-text text-black font-bold">
+										Password
+								</span>
 							</label>
-							<input type="text" placeholder="password" class="input input-bordered bg-red-800" />
-							<label class="label">
-								<a href="#" class="label-text-alt text-black font-bold link link-hover">Forgot password?</a>
+							<input 
+								type="text" 
+								placeholder="password" 
+								class="input input-bordered bg-red-800" />
+							<label 
+								class="label">
+								<a 
+									href="#" 
+									class="label-text-alt text-black font-bold link link-hover">
+										Forgot password?
+								</a>
 							</label>
 						</div>
-						<div class="form-control mt-6">
-							<button class="btn btn-primary bg-red-800 text-white">Login</button>
+						<div 
+							class="form-control mt-6">
+							<button 
+								class="btn btn-primary bg-red-800 text-white">
+									Login
+							</button>
 						</div>
 					</div>
 				</div>
@@ -133,9 +155,9 @@
 		</div>
 	
 			<div class="bg-red-800">
-				<ul class="steps steps-vertical">
-					<li class="step step-primary">Register</li>
-					<li class="step step-primary">Choose plan</li>
+				<ul class="steps steps-vertical text-black font-bold pl-2">
+					<li class="step">Register</li>
+					<li class="step">Choose plan</li>
 					<li class="step">Purchase Fish</li>
 					<li class="step">Fish Food</li>
 					<li class="step">Care Products</li>
@@ -146,12 +168,32 @@
 			<div class="bg-red-200">
 				<div class="hero min-h-screen bg-base-200">
 					<div class="hero-content flex-col lg:flex-row-reverse">
-						<img src="https://secureservercdn.net/45.40.145.151/7b0.14d.myftpupload.com/wp-content/uploads/2014/05/20160714_CenterInSquare_005-e1492026808145.jpg" id="img" class="max-w-sm rounded-lg shadow-2xl" />
+							<!-- Pin to bottom right corner -->
+						<div class="relative h-32 w-32 ...">
+							<div class="grid place-content-start">
+								<canvas 
+									id="myChart" 
+									style="max-width: 550px; display: block; height: 360px;" 
+									class="bg-red-400 p-6 chartjs-render-monitor" 
+									width="800px" 
+									height="">
+								</canvas>
+							</div>
+  						</div>
 						
 						<div>
-							<h1 class="text-5xl font-bold">Got'Emz!</h1>
-							<p class="py-6">Build your aqurium and get the top of the line equment and filters. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-							<button class="btn btn-primary bg-red-800">Get Started</button>
+							<h1 
+								class="flex text-5xl font-bold">
+								Got'Emz!
+							</h1>
+							<p 
+								class="py-6 h-48 w-96">
+								Build your aqurium and
+							</p>
+							<button 
+								class="btn btn-primary bg-red-800">
+								Get Started
+							</button>
 						</div>
 					</div>
 				</div>
@@ -159,6 +201,7 @@
 			<img src="https://reefaquariadesign.com/wp-content/uploads/2014/05/2700gallon_02.jpg" id="img" style="width: 448px; height: 299px;">
 			<img src="https://talkdecor.com/wp-content/uploads/2020/04/1-4.jpg" id="img" style="width: 448px; height: 299px;">
 			<img src="http://4.bp.blogspot.com/_UdzqQpb36Jo/R36iQk9p50I/AAAAAAAACXw/QRPBctCsYvY/s400/reefaquarium_2.jpg" id="img" style="width: 448px; height: 299px;">
+			
 		</nav>
 		<section>
 			<div class="artboard phone-2">
@@ -170,5 +213,13 @@
 			<div></div>
 			<div></div>
 		</section>
+		<footer 
+			class="footer footer-center p-4 bg-base-300 fix-bottom-0 text-base-content">
+			<div>
+				<p>
+					Copyright © 2023 - All right reserved by ACME Industries Ltd
+				</p>
+			</div>
+		</footer>
 </body>
 </html>
