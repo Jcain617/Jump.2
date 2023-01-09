@@ -179,6 +179,40 @@
 									id="myChart" 
 									style="width:100%;max-width:700px">
 								</canvas>
+								<script>
+var yxValues = [
+  {y:78, x:7},
+  {y:78, x:8},
+  {y:78, x:8},
+  {y:80, x:9},
+  {y:80, x:9},
+  {y:80, x:9},
+  {y:79, x:10},
+  {y:79, x:11},
+  {y:77, x:14},
+  {y:77, x:14},
+  {y:75, x:15},
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "bg-black-500",
+      data: yxValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 5, max:20}}],
+      yAxes: [{ticks: {min: 70, max:85}}],
+    }
+  }
+});
+</script>
+
 							</div>
   					</div>
 						
